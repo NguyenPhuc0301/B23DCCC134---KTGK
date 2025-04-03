@@ -1,4 +1,6 @@
-﻿export default [
+﻿import path from "path";
+
+export default [
 	{
 		path: '/user',
 		layout: false,

@@ -17,7 +17,7 @@ yarn-error.log
 
 /coverage
 .idea
-# yarn.lock
+yarn.lock
 package-lock.json
 *bak
 .vscode
@@ -40,8 +40,15 @@ screenshot
 build
 .husky
 
-.vercel
+# .vercel
 
 # Sentry Auth Token
 #.sentryclirc
+git rm --cached baseltw
+rm -rf baseltw
+git submodule deinit -f -- baseltw
+git submodule update --init --recursive
+git add .
+git commit -m "Xóa submodule lỗi"
+git push origin master
 
